@@ -6,7 +6,7 @@ The right datagrid for Dash when using [Dash Mantine Components](http://dash-man
 ## Install
 
 ```shell
-pip install dash_mantine_react_table==0.1.0a0
+pip install dash_mantine_react_table
 ```
 
 <img src="https://raw.githubusercontent.com/snehilvj/dash-mantine-react-table/master/assets/dmrt.png">
