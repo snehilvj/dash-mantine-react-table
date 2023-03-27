@@ -1,0 +1,55 @@
+{
+  "name": "dash_mantine_react_table",
+  "version": "0.0.1",
+  "description": "The right datagrid for Dash when using Dash Mantine Components.",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/snehilvj/dash-mantine-react-table.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snehilvj/dash-mantine-react-table/issues"
+  },
+  "homepage": "https://github.com/snehilvj/dash-mantine-react-table",
+  "scripts": {
+    "build:js::dev": "webpack --mode development",
+    "build:js": "webpack",
+    "build:backends": "dash-generate-components ./src/ts/components dash_mantine_react_table -p package-info.json --r-prefix '' --jl-prefix '' --ignore \\.test\\.",
+    "build": "npm run build:js && npm run build:backends",
+    "watch": "npm run build:js::dev -- --watch"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "css-loader": "^6.7.1",
+    "npm-run-all": "^4.1.5",
+    "ramda": "^0.28.0",
+    "react": "^18.2.0",
+    "react-docgen": "^5.4.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "author": "Snehil Vijay <snehilvj@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@mantine/core": "^6.0.4",
+    "@mantine/dates": "^6.0.4",
+    "@mantine/hooks": "^6.0.4",
+    "@tabler/icons-react": "^2.11.0",
+    "dayjs": "^1.11.7",
+    "mantine-react-table": "^0.9.5"
+  },
+  "files": [
+        "/dash_mantine_react_table/*{.js,.map}",
+        "/dash_mantine_react_table/metadata.json",
+        "LICENSE"
+    ]
+}

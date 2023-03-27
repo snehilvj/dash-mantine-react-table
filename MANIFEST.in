@@ -1,0 +1,5 @@
+recursive-include dash_mantine_react_table/** *.js *.css *.json *.html
+prune tests
+include README.md
+include LICENSE
+include package.json
